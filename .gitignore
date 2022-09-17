@@ -7,6 +7,14 @@ _DOTween.Assembly/*.user
 _DOTween.Assembly/.gitignore
 _DOTween.Assembly/.git
 
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
+
 ExternalPluginsTestsAndExamples*
 *.Unity*/_ReSharper*
 *.Unity*/Library
