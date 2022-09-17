@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DE8933A4-1BE0-A7EA-512E-480982A46CFE}</ProjectGuid>
+    <ProjectGuid>{9E5C05B8-A070-827A-DB1C-1538951D6BBE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>DOTween</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -56,8 +56,121 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Game\Scripts\Blue.cs" />
-    <Compile Include="Assets\Game\Scripts\Red.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\ColorPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Vector2WrapperPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\FloatOptions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\DoublePlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Vector4Plugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Easing\EaseCurve.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\TweenManager.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Enums\FilterType.cs" />
+    <Compile Include="Assets\Plugins\DOTween\DOVirtual.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\ABSSequentiable.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Enums\NestedTweenFailureBehaviour.cs" />
+    <Compile Include="Assets\Plugins\DOTween\RotateMode.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Easing\Flash.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\FloatPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\NoOptions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\DOTweenComponent.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Easing\EaseManager.cs" />
+    <Compile Include="Assets\Plugins\DOTween\PathMode.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Vector2Plugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\TweenLink.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Extensions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\PathCore\Path.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\PathCore\CubicBezierDecoder.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\LongPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Enums\UpdateNotice.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\PathPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\UintPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\StringPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Delegates.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\CirclePlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\ColorWrapperPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Enums\RewindCallbackMode.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Surrogates\QuaternionWrapper.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\IPlugSetter.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\UlongPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\IntPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\DOTween.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Tween.cs" />
+    <Compile Include="Assets\Plugins\DOTween\LoopType.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\IPlugOptions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Ease.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Tweener.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\DOTweenExternalCommand.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Surrogates\ColorWrapper.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\ColorOptions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\QuaternionWrapperPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Surrogates\Vector3Wrapper.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\PathCore\CatmullRomDecoder.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\PathCore\ABSPathDecoder.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\UintOptions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\TweenType.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\SequenceCallback.cs" />
+    <Compile Include="Assets\Plugins\DOTween\ScrambleMode.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\DOTweenSettings.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\ITweenPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Enums\UpdateMode.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Color2.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Easing\Bounce.cs" />
+    <Compile Include="Assets\Plugins\DOTween\AxisConstraint.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Vector3Plugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Enums\SpecialStartupMode.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Sequence.cs" />
+    <Compile Include="Assets\Plugins\DOTween\PathType.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\VectorOptions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Vector4WrapperPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\LinkBehaviour.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\PathOptions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\RectPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\TweenExtensions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\Plugins\DOTween\ShortcutExtensions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\PathCore\ControlPoint.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\SpecialPluginsUtils.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\QuaternionOptions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\StringOptions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Vector3WrapperPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\UpdateType.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Surrogates\Vector2Wrapper.cs" />
+    <Compile Include="Assets\Plugins\DOTween\ShakeRandomnessMode.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\SafeModeReport.cs" />
+    <Compile Include="Assets\Plugins\DOTween\DOCurve.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\PluginsManager.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\QuaternionPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\TweenerCore.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Enums\OperationType.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\DOTweenUtils.cs" />
+    <Compile Include="Assets\Plugins\DOTween\CustomPlugins\PureQuaternionPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\ABSTweenPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\ITPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Enums\SafeModeLogBehaviour.cs" />
+    <Compile Include="Assets\Plugins\DOTween\LogBehaviour.cs" />
+    <Compile Include="Assets\Plugins\DOTween\AutoPlay.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Vector3ArrayPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\EaseFactory.cs" />
+    <Compile Include="Assets\Plugins\DOTween\IDOTweenInit.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Core\PathCore\LinearDecoder.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Color2Plugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\RectOffsetPlugin.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\RectOptions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\TweenSettingsExtensions.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Debugger.cs" />
+    <Compile Include="Assets\Plugins\DOTween\TweenParams.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Core\Surrogates\Vector4Wrapper.cs" />
+    <Compile Include="Assets\Plugins\DOTween\Plugins\Options\Vector3ArrayOptions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Plugins\DOTween\DOTween.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -306,6 +419,30 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\Unity\UnityEditors\2022.1.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>D:\Unity\UnityEditors\2022.1.16f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>D:\Unity\UnityEditors\2022.1.16f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
@@ -314,6 +451,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\Unity\UnityEditors\2022.1.16f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -681,90 +821,14 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>D:\Unity\UnityEditors\2022.1.16f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="DOTween.csproj">
-      <Project>{9E5C05B8-A070-827A-DB1C-1538951D6BBE}</Project>
-      <Name>DOTween</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
