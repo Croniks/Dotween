@@ -6,6 +6,11 @@ internal class Blue : AbstractControlable
 {
     public override Tween CreateTween()
     {
-        return transform.DOMove(Vector3.left * 4, 2f);
-    }
+        return DOTween.Sequence()
+                    .Append(transform.DOMoveY(2f, 1f, true).SetRelative(true))
+                    .Append(transform.DOMoveX(-4f, 1f, true).SetRelative(true))
+                    .Append(transform.DOMoveY(-4f, 1f, true).SetRelative(true))
+                    .Append(transform.DOMoveX(4f, 1f, true).SetRelative(true))
+                    .SetLoops(10, LoopType.Yoyo);
+    }   
 }
