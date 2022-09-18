@@ -2,12 +2,10 @@ using DG.Tweening;
 using UnityEngine;
 
 
-public class Red : MonoBehaviour
+internal class Red : AbstractControlable
 {
-    
-
-    private void Start()
+    public override Tween CreateTween()
     {
-        transform.DOMove(Vector3.up * 2, 2f).SetRelative(true);
+        return transform.DOMove(Vector3.up * 2, 2f);
     }
 }

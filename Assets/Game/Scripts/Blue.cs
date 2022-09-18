@@ -1,16 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine;
 using DG.Tweening;
 
-using UnityEngine;
 
-
-public class Blue : MonoBehaviour
+internal class Blue : AbstractControlable
 {
-
-
-    private void Start()
+    public override Tween CreateTween()
     {
-        transform.DOMove(Vector3.left * 4, 2f).SetRelative();
+        return transform.DOMove(Vector3.left * 4, 2f);
     }
 }

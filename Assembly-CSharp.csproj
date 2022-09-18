@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Game\Scripts\Blue.cs" />
     <Compile Include="Assets\Game\Scripts\Red.cs" />
+    <Compile Include="Assets\Game\Scripts\GameLogic.cs" />
+    <Compile Include="Assets\Game\Scripts\AbstractControlable.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
