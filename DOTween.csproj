@@ -170,6 +170,7 @@
     <Compile Include="Assets\Plugins\DOTween\Plugins\Options\Vector3ArrayOptions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Plugins\DOTween\Architecture\DOTween.cd" />
     <None Include="Assets\Plugins\DOTween\DOTween.asmdef" />
   </ItemGroup>
   <ItemGroup>

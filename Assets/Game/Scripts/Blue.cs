@@ -10,7 +10,6 @@ internal class Blue : AbstractControlable
                     .Append(transform.DOMoveY(2f, 1f, true).SetRelative(true))
                     .Append(transform.DOMoveX(-4f, 1f, true).SetRelative(true))
                     .Append(transform.DOMoveY(-4f, 1f, true).SetRelative(true))
-                    .Append(transform.DOMoveX(4f, 1f, true).SetRelative(true))
-                    .SetLoops(10, LoopType.Yoyo);
-    }   
+                    .Append(transform.DOMoveX(4f, 1f, true).SetRelative(true));
+    }
 }
