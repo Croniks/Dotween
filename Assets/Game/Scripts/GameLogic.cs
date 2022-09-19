@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DG.Tweening;
 
 using UnityEngine;
 
@@ -7,6 +8,12 @@ public class GameLogic : MonoBehaviour
 {
     [SerializeField] private List<AbstractControlable> _controlables;
 
+
+    private void Awake()
+    {
+        DOTween.useSafeMode = false;
+        DOTween.Init();
+    }
 
     private void Update()
     {

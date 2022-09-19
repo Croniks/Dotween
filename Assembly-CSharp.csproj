@@ -62,6 +62,9 @@
     <Compile Include="Assets\Game\Scripts\Red.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Game\Scripts\Architecture\TwoCubesLogic.cd" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>D:\Unity\UnityEditors\2022.1.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
